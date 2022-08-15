@@ -34,7 +34,7 @@ const Home = ({taskList, setTaskList}) => {
     <div className="coontainer d-flex flex-column align-items-center  ">
         <h1 className="text-danger m-3">Task Tracker</h1>
         <InputGroup className="m-3 w-50">
-        <InputGroup.Text className="w-25" id="basic-addon1">Task name</InputGroup.Text>
+        <InputGroup.Text className="w-25 bg-warning" id="basic-addon1">Task name</InputGroup.Text>
         <Form.Control
           placeholder="Your task..."
           aria-label="Username"
@@ -45,9 +45,9 @@ const Home = ({taskList, setTaskList}) => {
       </InputGroup>
 
       <InputGroup className="mb-3 w-50">
-      <InputGroup.Text className="w-25" id="basic-addon2">Start date</InputGroup.Text>
+      <InputGroup.Text className="w-25 bg-warning" id="basic-addon2">Start date</InputGroup.Text>
         <Form.Control
-          placeholder="Start date"
+          placeholder="1 Sep 2022"
           aria-label="Start date"
           aria-describedby="basic-addon2"
           onChange={addStartDate}
@@ -56,10 +56,10 @@ const Home = ({taskList, setTaskList}) => {
       </InputGroup>
 
       <InputGroup className="mb-3 w-50">
-      <InputGroup.Text className=" w-25" id="basic-addon3">End date </InputGroup.Text>
+      <InputGroup.Text className=" w-25 bg-warning" id="basic-addon3">End date </InputGroup.Text>
         <Form.Control
-          placeholder="End date"
-          aria-label="Recipient's username"
+          placeholder="10 Sep 2022"
+          aria-label="10 Sep 2022"
           aria-describedby="basic-addon3"
           onChange={addEndDate}
           value={endDate}
