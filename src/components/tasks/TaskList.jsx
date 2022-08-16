@@ -20,7 +20,7 @@ const TaskList = ({taskList, setTaskList, taskInfo, setTaskInfo}) => {
         <Table  striped  hover>
       <thead>
         <tr>
-          <th>#</th>
+          <th>#Id</th>
           <th>Task Name</th>
           <th>Start Date</th>
           <th>End Date</th>
